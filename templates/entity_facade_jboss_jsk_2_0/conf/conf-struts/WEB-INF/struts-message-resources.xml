@@ -1,0 +1,2 @@
+<message-resources null="false" parameter="ApplicationResources" />
+<!-- ApplicationResources, null = false will show which resources weren't found. -->

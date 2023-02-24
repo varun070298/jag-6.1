@@ -1,0 +1,21 @@
+<html>
+<head>
+   <link rel="stylesheet" href="help.css">
+</head>
+
+<h4>Relation configuration screen</h4>
+<img src="images/relation_confscreen.jpg"><br>
+This screen contains configuration options for a relation:
+<ul>
+<li><b>relation name:</b> the name used to identify this relation.</li>
+<li><b>relation field name:</b> a relation is represented in the entity as a field, with correspponding get- and set-methods.
+This is the name for the relation field, which must be a valid Java field name.</li>
+<li><b>foreign key column:</b> the foreign-key column in this entity's database table that this relation maps to.</li>
+<li><b>foreign table:</b> the database table that the foreign key points to.</li>
+<li><b>foreign table's primary key:</b> the primary key column in the foreign-key table <i>(NOTE: relations to entities with
+compound primary keys are not yet supported)</i>.</li>
+<li><b>cardinality:</b> the relation may be one-to-one, one-to-many or many-to-many depending on the mapping between this
+entity and the related entity <i>(NOTE: presently only one-to-many relations are supported).</i>.</li>
+<li><b>bi-directional relationship?:</b> checked if the relation is bi-directional, i.e. the relation may be traversed
+in both directions <i>(NOTE: presently only unidirectional relations are supported)</i>.</li>
+</ul>

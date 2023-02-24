@@ -1,0 +1,1 @@
+Put here the sources that should be copied for all swing applications to the presentation tier during code generation.

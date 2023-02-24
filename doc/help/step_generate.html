@@ -1,0 +1,30 @@
+<html>
+<head>
+   <link rel="stylesheet" href="help.css">
+</head>
+
+<h3>Generating the application</h3>
+Once you have finished adding/editing/deleting the entities in your application, you can then proceed to application generation.
+Application generation is started by choosing the menu File > Generate Application, or using the
+<img align="middle" src="../../images/execute.png">&nbsp; button on the toolbar.
+<p>
+Generating an application with JAG is a one step process, however before generation can take place JAG will validate the application
+file that you have made.
+<p>
+Here is an overview of the various validations that are performed:
+<ul>
+<li>Required fields must be filled in: e.g. the application name, the root package and the datasource URL. </li>
+<li>Dead entity references removed: e.g. if an entity was added to a service and subsequently deleted from the application.</li>
+<li>Entity bean primary key integrity checks.</li>
+<li>Duplicate field/relation names.</li>
+<li>Relations - Service integrity checks: if an entity containing relations is added to a service, then the related entity(-ies)
+must also appear in a service.  (This is because the FastLaneReader J2EE pattern used by the generated application requires value objects
+that can reference their related entity fields through a service fa&ccedil;ade).</li>
+</ul>
+<p>
+Once the validations have succeeded, you will be prompted to choose an output directory where the application files will be generated.
+The application will be created within the selected directory, in a directory with the same name as the application.
+
+<p>
+<table width="100%"><tr><td align="center">Previous step: <a href="step_business.html">Creating business methods</a></td></tr></table>
+<a href="help.html">&lt;&lt;Start page</a>

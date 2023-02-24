@@ -1,0 +1,10 @@
+<!ELEMENT libs (noInclude,war,ear)>
+<!ELEMENT noInclude (lib|localLib)*>
+<!ELEMENT war (lib|localLib)*>
+<!ELEMENT ear (lib|localLib)*>
+<!ELEMENT lib (#PCDATA)>
+<!ATTLIST lib version CDATA #IMPLIED>
+<!ATTLIST lib file CDATA #IMPLIED>
+<!ATTLIST lib url CDATA #IMPLIED>
+<!ELEMENT localLib (#PCDATA)>
+<!ATTLIST localLib file CDATA #REQUIRED>

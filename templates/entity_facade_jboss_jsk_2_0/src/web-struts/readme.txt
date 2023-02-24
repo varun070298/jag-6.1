@@ -1,0 +1,1 @@
+Put here the web resources (css, html, images) that should be copied for all struts applications to the web tier during code generation

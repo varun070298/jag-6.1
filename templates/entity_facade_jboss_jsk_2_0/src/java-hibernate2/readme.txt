@@ -1,0 +1,1 @@
+Put here the sources that should be copied for all hibernate2 applications to the business tier during code generation.

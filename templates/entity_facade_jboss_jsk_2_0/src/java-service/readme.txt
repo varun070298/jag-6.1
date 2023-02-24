@@ -1,0 +1,1 @@
+Put here the sources that should be copied to all applications to the service tier during code generation.

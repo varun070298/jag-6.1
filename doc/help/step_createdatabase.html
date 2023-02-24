@@ -1,0 +1,24 @@
+<html>
+<head>
+   <link rel="stylesheet" href="help.css">
+</head>
+
+<h3>Creating the application database</h3>
+<img src="images/datasource.jpg"><br>
+To create a new application with JAG you will first need to create a database for the application.  The tables in this database will
+determine the entities that you can create: unfortunately this isn't always the best way to design a database,
+so this point is worth bearing in mind.
+<p>
+<b><i>TIP:</i></b> It makes sense to create foreign key definitions in your database tables if you intend to generate relations.
+<p>
+JAG does not provide any tools for creating a database; this is best done with your database's administration tools, or with a
+generic database management application such as
+<a href="http://www.minq.se/products/dbvis/!!!EXTERNAL!!!">DBVisualiser</a>,
+<a href="http://squirrel-sql.sourceforge.net/!!!EXTERNAL!!!">SquirrelSQL</a>,
+or <a href="http://www.quest.com/toad/!!!EXTERNAL!!!">Toad</a>.
+<p>
+Once the database has been created, you can specify the database connection by filling in the 'JDBC url' field
+in the 'Datasource' configuration page (see following step).  JAG currently supports Oracle, MySQL and PostgreSQL databases.
+<p>
+<table width="100%"><tr><td align="center">Next step: <a href="step_appconfig.html">Application configuration</a></td></tr></table>
+<a href="help.html">&lt;&lt;Start page</a>

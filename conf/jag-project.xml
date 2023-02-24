@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This is the root project file for the JAG modules, each module extends this template.
+A template that extends this template MUST at least override
+id,name and package
+
+$Id: jag-project.xml,v 1.2 2006/05/14 20:03:15 ekkelenkamp Exp $
+-->
+<project>
+  <pomVersion>3</pomVersion>
+  <id>base-project</id>
+  <name>Base Project</name>
+  <groupId>jag</groupId>
+  <package>net.sf.jag</package>
+  <currentVersion>1.0</currentVersion>
+  <organization>
+    <name>SourceForge</name>
+    <url>http://www.sourceforge.net/projects/jag/</url>
+    <logo>http://sourceforge.net/sflogo.php?group_id=86381&amp;type=5</logo>
+  </organization>
+  <url>http://jag.sourceforge.net/${pom.name}</url>
+  <inceptionYear>2003</inceptionYear>
+  <issueTrackingUrl>http://sourceforge.net/tracker/?group_id=86381</issueTrackingUrl>
+  <siteAddress>${pom.groupId}.sourceforge.net</siteAddress>
+  <siteDirectory>/home/groups/${pom.groupId.substring(0,1)}/${pom.groupId.substring(0,2)}/${pom.groupId}/htdocs/maven/${pom.name}</siteDirectory>
+  <distributionSite>${pom.groupId}.sourceforge.net</distributionSite>
+  <distributionDirectory>/home/groups/${pom.groupId.substring(0,1)}/${pom.groupId.substring(0,2)}/${pom.groupId}/htdocs/download/</distributionDirectory>
+  <developers>
+    <developer>
+      <name>Rudie Ekkelenkamp</name>
+      <id>ekkelenkamp</id>
+      <email>ekkelenkamp@users.sourceforge.net</email>
+      <organization>Finalist IT Group</organization>
+    </developer>
+    <developer>
+      <name>Michael O'Connor</name>
+      <id>oconnor_m</id>
+      <email>oconnor_m@users.sourceforge.net</email>
+    </developer>
+  </developers>
+  <repository>
+    <connection>scm:cvs:pserver:anonymous@jag.cvs.sourceforge.net:/cvsroot/jag:jag/modules/${pom.name}</connection>
+    <developerConnection>scm:cvs:ssh:username@jag.cvs.sourceforge.net:/cvsroot/jag:jag/modules/${pom.name}</developerConnection>
+    <url>http://cvs.sourceforge.net/viewcvs.py/jag/jag/modules/${pom.name}/</url>
+  </repository>
+  <build>
+    <sourceDirectory>${basedir}/src</sourceDirectory>
+  </build>
+</project>
